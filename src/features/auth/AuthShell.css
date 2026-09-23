@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 16px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.left-container{
+    flex-basis: 50%;
+    background: linear-gradient(155deg, #382CD1, #4C3EFF 58%, #7A6FFF);
+    position:relative;
+    overflow: hidden;
+}
+
+.left-container::before, .left-container::after{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.16);
+}
+.left-container::before {
+  width: 480px;
+  height: 480px;
+  right: -180px;   /* pushed mostly off the right edge... */
+  bottom: -180px;  /* ...and off the bottom edge */
+}
+
+.left-container::after {
+  width: 320px;
+  height: 320px;
+  right: -90px;
+  bottom: -90px;
+  border-color: rgba(255, 255, 255, 0.12);  /* slightly fainter than the first one */
+}
+
+.right-container{
+    flex-basis:50%;
+}
+
+.header-content{
+    margin:30px;
+    font-size: 1.5rem;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    color: white;
+}
+.dot{
+    height: 9px;
+    width: 9px;
+    background: white;
+    border-radius: 10px;
+}
+
+.content{
+    color:white;
+    margin:30px;
+    margin-top:200px;
+}
+
+.content h2{
+    line-height:1.22;
+    font-size: 2rem;
+    max-width: 300px;
+}
+
+.content p{
+    width: 400px;
+}
+
+.version{
+    margin: 230px 0 0 30px; /*top left right bottom*/
+    font-size:0.8rem;
+    color:rgba(255, 255, 255, 0.6);
+}

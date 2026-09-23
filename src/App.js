@@ -1,10 +1,10 @@
 import './App.css';
-import Login from './features/auth/LoginPage'
+import AuthShell from './features/auth/AuthShell'
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <AuthShell/>
     </div>
   );
 }

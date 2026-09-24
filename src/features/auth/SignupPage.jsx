@@ -1,11 +1,12 @@
 import AuthShell from './AuthShell';
 import AuthCard from './AuthCard';
 
-function Login(){
+function SignupPage(){
     return(
         <AuthShell>
-            <AuthCard InitialMode='login'></AuthCard>
+            <AuthCard initialMode='signup'></AuthCard>
         </AuthShell>
     )
 }
-export default Login;
+
+export default SignupPage;

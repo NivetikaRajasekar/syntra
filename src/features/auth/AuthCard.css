@@ -3,5 +3,28 @@
 }
 
 .card{
-    display: flex;
+    border: 2px solid black; 
+    height: 500px;
+    width: 500px;
+    
 }
+.modeTabs{
+    display: flex; 
+    justify-content: center;
+    margin: 30px;
+    border: 2px solid black; 
+    border-radius: 5px;
+    
+}
+
+.signin, .create-button{
+    margin: 20px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+
+.signin{
+    width: 80px;
+}
+

@@ -10,13 +10,25 @@ function AuthCard({initialMode = 'login'}){
     return(
         <div className='card'>
             <div className='modeTabs'>
-                <button>
+                <button className='signin'>
                     Sign in
                 </button>
-                <button>
+                <button className='create-button'>
                     Create Account
                 </button>
             </div>
+            <h1 className='title'>{isSignUp? "Create your account" : "Welcome Back!"}</h1>
+            <p className='subtitle'>{isSignUp? "Setup your workspace in a minute" : "Sign in to continue where you left off"}</p>
+
+            {/* Form begins */}
+
+            <form>
+              {/*Name (signup only) */}
+
+              <input>
+              </input>
+
+            </form>
         </div>
     )
 }
